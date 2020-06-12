@@ -1,0 +1,55 @@
+.Calendrier {
+    width: 100%;
+    border: 1px solid white;
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px 0px black;
+    position: relative;
+}
+.Calendrier button {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 5px;
+    outline: none;
+}
+.Calendrier button:hover {
+    background-color: rgb(0, 175, 0);
+}
+.Calendrier button:active {
+    background-color: rgb(0, 211, 0);
+    box-shadow: 0px 0px 2px black;
+}
+.Calendrier h1 {
+    margin: 1rem 1rem 0.5rem;
+}
+ul.week {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-inline-start: 0;
+    flex-wrap: wrap;
+}
+li {
+    min-width: 100%;
+}
+
+@media only screen and (min-width: 850px) {
+    .Calendrier {
+        width: 80%;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 400px) {
+    li {
+        min-width: 14.285714285714286%;
+    }
+    ul.week {
+        flex-wrap: nowrap;
+    }
+    .Calendrier {
+        height: 600px;
+    }
+}
